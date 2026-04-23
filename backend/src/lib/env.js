@@ -1,4 +1,5 @@
-import "dotenv/config";
+import { config } from "dotenv";
+config({ override: true });
 
 export const ENV = {
   PORT: process.env.PORT,
